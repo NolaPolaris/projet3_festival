@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "tailwindcss": "^1.9.3"
+  },
+  "scripts": {
+    "build": "yarn tailwindcss build festival/static/css/main.css -o static/css/build/festival.css"
+  }
+  
+}
