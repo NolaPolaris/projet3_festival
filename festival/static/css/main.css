@@ -4,3 +4,210 @@
 
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: 'Arvo';
+        src: url('../font/Arvo.woff2') format('woff2'),
+             url('../font/Arvo.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Arvo';
+        src: url('../font/Arvo-BoldItalic.woff2') format('woff2'),
+             url('../font/Arvo-BoldItalic.woff') format('woff');
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Alata';
+        src: url('../font/Alata-Regular.woff2') format('woff2'),
+             url('../font/Alata-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Arvo';
+        src: url('../font/Arvo-Italic.woff2') format('woff2'),
+             url('../font/Arvo-Italic.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Arvo';
+        src: url('../font/Arvo-Bold.woff2') format('woff2'),
+             url('../font/Arvo-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Comfortaa';
+        src: url('../font/Comfortaa-SemiBold.woff2') format('woff2'),
+             url('../font/Comfortaa-SemiBold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Comfortaa';
+        src: url('../font/Comfortaa-Bold.woff2') format('woff2'),
+             url('../font/Comfortaa-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Comfortaa';
+        src: url('../font/Comfortaa-Regular.woff2') format('woff2'),
+             url('../font/Comfortaa-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Comfortaa';
+        src: url('../font/Comfortaa-Medium.woff2') format('woff2'),
+             url('../font/Comfortaa-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Comfortaa';
+        src: url('../font/Comfortaa-Regular.woff2') format('woff2'),
+             url('../font/Comfortaa-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Comfortaa';
+        src: url('../font/Comfortaa-Light.woff2') format('woff2'),
+             url('../font/Comfortaa-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    h1 {
+        font-family: 'Arvo';
+        @apply text-4xl;
+
+        
+    }
+    
+    h2{
+        font-family: 'Arvo';
+        @apply my-6 text-3xl font-bold;
+    }
+
+    h3{
+        font-family: 'Alata';
+    }
+    
+    p{
+        font-family:'Comfortaa';
+    }
+
+    #accueil{
+    }
+
+    .swiper-header{
+        @apply w-full;
+        height:40rem;
+        overflow:hidden;
+    }
+
+    .header-pagination{
+        @apply flex flex-col;
+        top:50%;
+        transform:translateY(-50%);
+        z-index:10;
+
+    }
+
+    .header-bullets{
+        @apply w-6 h-6 mx-2 relative;
+
+    }
+
+    .header-bullets-active{
+        @apply w-6 h-6;
+        color:yellow;
+    }
+
+    .header-bullets-active:after{
+        @apply bg-yellow-500 absolute;
+        content:"";
+        bottom:0;
+        left:12px;
+        width:12px;
+        height:2px;
+
+
+    }
+
+    #encard-header{
+        background : linear-gradient(rgba(254,46,21,.8), rgba(254,46,21,.8));
+        left:0;
+        top:0;
+        z-index:10;
+    }
+    
+    #actu{
+
+    }
+
+    .article{
+        @apply mr-8;
+        overflow:hidden;
+    }
+
+    .article > h3{
+        z-index:1;
+        @apply py-6 bg-blue-500 absolute top-0 w-full text-2xl font-bold;
+    }
+
+    .article > p{
+        position: absolute;
+        top: -50px;
+        opacity: 0;
+        
+      }
+
+    .article:hover > p {
+        background-color : rgba(255,255,255,0.80);
+        transform: translateY(120px);
+        opacity: 1;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        
+    }
+
+    .article:hover > img{
+        object-position:5%;
+        filter: grayscale(1) contrast(1.5);
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        
+    }
+
+}
+
+
+

@@ -1,6 +1,7 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="fr">
+
 <head>
   <meta charset="utf-8">
 
@@ -8,11 +9,120 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="static/css/festival.css">
 
 </head>
 
 <body>
-  
+
+  <header class="bg-black pl-8 py-8 text-white text-lg font-bold">
+    <nav>
+      <ul class="flex justify-between items-center w-1/3 ">
+        <li><a href="#">
+            <h3>Actualités</h3>
+          </a></li>
+        <li><a href="#">
+            <h3>Programme 2020</h3>
+          </a></li>
+        <li><a href="#">
+            <h3>Réserver</h3>
+          </a></li>
+        <li><a href="#">
+            <h3>A propos</h3>
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="" id="accueil">
+    <section class="relative">
+      <div class="absolute bg-red h-full w-1/4" id="encard-header">
+
+      </div>
+      <div class="swiper-header relative">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide h-full">
+            <img src="static/img/film-1.png" class="w-full" alt="" />
+          </div>
+
+          <div class="swiper-slide h-full">
+            <img src="static/img/film-2.png" class="w-full" alt="" />
+          </div>
+
+          <div class="swiper-slide h-full">
+            <img src="static/img/film-3.jpg" class="w-full" alt="" />
+          </div>
+        </div>
+
+        <div class="header-pagination absolute"></div>
+      </div>
+    </section>
+
+
+    <section class="mt-20" id="actu">
+      <h2 class="text-center">Actualités</h2>
+      <div class="mx-20 flex justify-between items-center">
+
+        <div class="article mr-8 relative h-96">
+          <h3 class="py-6 bg-blue-500 absolute top-0 w-full">Titre actu</h3>
+          <img src="static/img/film-1.png" class="w-full h-full object-cover">
+          <p class="absolute w-full h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis est sit amet purus feugiat blandit.
+              Donec fringilla nibh dui. In ligula nisi, consequat ac faucibus non, rhoncus non nunc. Suspendisse rutrum
+              elit pulvinar est dictum aliquet. Donec nec dignissim eros. Fusce accumsan tincidunt mattis. Etiam dapibus
+              nec leo at bibendum.
+          </p>
+          
+        </div>
+
+
+        <div class="article mr-8 relative h-96">
+          <h3 class="py-6 bg-blue-500 absolute top-0 w-full">Titre actu</h3>
+          <img src="static/img/film-1.png" class="w-full h-full object-cover">
+          <p class="absolute w-full h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis est sit amet purus feugiat blandit.
+              Donec fringilla nibh dui. In ligula nisi, consequat ac faucibus non, rhoncus non nunc. Suspendisse rutrum
+              elit pulvinar est dictum aliquet. Donec nec dignissim eros. Fusce accumsan tincidunt mattis. Etiam dapibus
+              nec leo at bibendum.
+          </p>
+          
+        </div>
+
+
+        <div class="article mr-8 relative h-96">
+          <h3 class="">Titre actu</h3>
+          <img src="static/img/film-1.png" class="w-full h-full object-cover">
+          <p class="absolute w-full h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis est sit amet purus feugiat blandit.
+              Donec fringilla nibh dui. In ligula nisi, consequat ac faucibus non, rhoncus non nunc. Suspendisse rutrum
+              elit pulvinar est dictum aliquet. Donec nec dignissim eros. Fusce accumsan tincidunt mattis. Etiam dapibus
+              nec leo at bibendum.
+          </p>
+          
+        </div>
+
+      </div>
+    </section>
+    <section>
+      section progammation
+    </section>
+    <section>
+      formulaire de réservation
+    </section>
+  </main>
+  <footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/festival.js"></script>
+
+
+  </footer>
+
 </body>
+
 </html>
