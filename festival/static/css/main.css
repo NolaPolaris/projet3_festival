@@ -207,6 +207,130 @@
         
     }
 
+    
+    .titre-programme{
+        @apply py-6 pl-12 text-2xl font-bold bg-white absolute;
+        box-shadow: 10px 10px 0px 0px rgba(13,99,225,1);
+        opacity:0;
+        left:20rem;
+        top:3rem;
+    }
+
+    .titre-programme > h3{
+        top: -2rem;
+        right: 0;
+        font-size: xxx-large;
+        font-family: 'Arvo';
+    }
+
+    #programmation:hover > div.titre-programme{
+        @apply py-6 text-2xl font-bold bg-white absolute;
+        box-shadow: 10px 10px 0px 0px rgba(13,99,225,1);
+        opacity:1;
+        left:32rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 50rem;
+        background-color: #fff;
+        position: absolute;
+        box-shadow: 10px 10px 0px 0px rgba(13,99,225,1);
+        opacity:1;
+        left: 40rem;
+        top:3rem;
+        z-index: 1;
+        transition:0.5s;
+        }
+
+    .encart-prog{    
+
+        right: 0;
+        top: 0;
+        background: yellow;
+        width: 100%;
+        height: 100%;
+        transition:0.5s;
+    }
+
+    
+
+    #programmation:hover > .programme{
+        overflow: hidden;
+    }
+
+    #programmation:hover > .programme > div.encart-prog{
+        width: 47rem;
+    }
+
+    .encart-prog:after{
+        content:"";
+        position:absolute;
+        left:0;
+        top: 0;
+        background: yellow;
+        width: 47rem;
+        height: 100%;
+        
+    }
+
+    #programmation:hover > .programme > div.encart-prog:after{
+        content:"";
+        position:absolute;
+        left:-5rem;
+        top: 0;
+        background: yellow;
+        width: 38rem;
+        height: 100%;
+        transform: skewX(-10deg);
+        transition:0.5s;
+    }
+  
+
+    .liste-film{
+        top:8rem;
+        right:15rem;
+        opacity:0;
+    }
+
+    /* #programmation:hover > .programme > .liste-film{
+        opacity:1;
+        right:8rem;
+        transition:1s;
+    
+    } */
+
+    #programmation:hover > .programme > .liste-film:first-child{
+        opacity:1;
+        right:8rem;
+        transition:0.5s;
+    }
+
+    #programmation:hover > .programme > .liste-film:nth-child(2){
+        opacity:1;
+        right:8rem;
+        transition:0.5s;
+        transition-delay:0.5s;
+    }
+
+    #programmation:hover > .programme > .liste-film:nth-child(3){
+        opacity:1;
+        right:8rem;
+        transition:0.5s;
+        transition-delay:0.7s;
+    }
+
+    #programmation:hover > .programme > .liste-film:nth-child(4){
+        opacity:1;
+        right:8rem;
+        transition:0.5s;
+        transition-delay:0.9s;
+    }
+
+        
+
+
+
+   
+
 }
 
 
