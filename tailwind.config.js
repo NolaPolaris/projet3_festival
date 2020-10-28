@@ -56,17 +56,7 @@ module.exports = {
         800: '#9c4221',
         900: '#7b341e',
       },
-      yellow: {
-        100: '#fffff0',
-        200: '#fefcbf',
-        300: '#faf089',
-        400: '#f6e05e',
-        500: '#ecc94b',
-        600: '#d69e2e',
-        700: '#b7791f',
-        800: '#975a16',
-        900: '#744210',
-      },
+      
       green: {
         100: '#f0fff4',
         200: '#c6f6d5',
@@ -157,7 +147,8 @@ module.exports = {
       '72': '18rem',
       '80': '20rem',
       '96': '24rem',
-      '128': '32rem',
+      '128':'32rem',
+      '50p':'50%',
       
     },
     backgroundColor: theme => theme('colors'),
