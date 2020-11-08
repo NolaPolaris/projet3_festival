@@ -338,10 +338,29 @@
     }
 
 
+
+
+
     .reservation{
-        background: url("../img/cinema-grey.png") no-repeat;
-        background-size: cover;
+       @apply bg-yellow;
     }
+
+    #reservation > h2 {
+        box-shadow: 10px 10px 0px 0px rgba(13,99,225,1);
+    } 
+    
+    .formulaire{
+        @apply px-4 py-6 relative my-6;
+        box-shadow:13px 14px 0px 0px #000000;
+    }
+
+
+
+
+
+
+
+
 
     #bg-programme{
         background: url("../img/cinema-yellow.png") no-repeat;
@@ -387,8 +406,6 @@
         padding-left:2rem;
 
     }
-
-
 
     .line{
         height: 4rem;
@@ -475,6 +492,17 @@
         box-shadow: none;
     }  
     
+    .reservation{
+        background: url("../img/cinema-grey.png") no-repeat;
+        background-size: cover;
+    }
+
+
+    #reservation > h2 {
+        box-shadow: none;
+    }
+
+
 }
 
 @screen lg{
@@ -791,13 +819,12 @@
     }
 
     .formulaire{
-        @apply px-20 py-12 relative;
+        @apply px-20 py-12 relative my-0;
         box-shadow:13px 14px 0px 0px #000000;
     }
 
     input{
         @apply w-1/2 ml-2;
-    
     }
 
     

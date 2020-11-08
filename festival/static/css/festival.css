@@ -983,12 +983,13 @@ label{
 
 .edition > h3:before{
   content:"";
-  width: 75%;
+  width: 50%;
   height: 0.25rem;
   --bg-opacity: 1;
   background-color: #000;
   background-color: rgba(0, 0, 0, var(--bg-opacity));
   position: absolute;
+  left: 0;
   top:50%;
   transform:translateY(-50%)
 }
@@ -1040,8 +1041,24 @@ label{
 }
 
 .reservation{
-  background: url("../img/cinema-grey.png") no-repeat;
-  background-size: cover;
+  --bg-opacity: 1;
+  background-color: #FEF615;
+  background-color: rgba(254, 246, 21, var(--bg-opacity));
+}
+
+#reservation > h2 {
+  box-shadow: 10px 10px 0px 0px rgba(13,99,225,1);
+}
+
+.formulaire{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow:13px 14px 0px 0px #000000;
 }
 
 #bg-programme{
@@ -22144,6 +22161,15 @@ footer a {
   #actu > h2 {
     box-shadow: none;
   }
+
+  .reservation{
+    background: url("../img/cinema-grey.png") no-repeat;
+    background-size: cover;
+  }
+
+  #reservation > h2 {
+    box-shadow: none;
+  }
 }
 
 @media (min-width: 1024px){
@@ -22477,6 +22503,8 @@ footer a {
     padding-top: 3rem;
     padding-bottom: 3rem;
     position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
     box-shadow:13px 14px 0px 0px #000000;
   }
 
