@@ -1,9 +1,10 @@
 {
   "dependencies": {
+    "swiper": "^6.3.5",
+    "tailwind": "^4.0.0",
     "tailwindcss": "^1.9.3"
   },
   "scripts": {
     "build": "yarn tailwindcss build festival/static/css/main.css -o festival/static/css/festival.css"
   }
-  
 }
