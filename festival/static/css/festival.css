@@ -799,6 +799,74 @@ p{
   border-width:2px;
 }
 
+.btn-nav:after{
+  content:"";
+  position: absolute;
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  --bg-opacity: 1;
+  background-color: #FEF615;
+  background-color: rgba(254, 246, 21, var(--bg-opacity));
+  top:0.5rem;
+}
+
+.btn-nav{
+  content:"";
+  position: absolute;
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  --bg-opacity: 1;
+  background-color: #FEF615;
+  background-color: rgba(254, 246, 21, var(--bg-opacity));
+}
+
+.btn-nav:before{
+  content:"";
+  position: absolute;
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  --bg-opacity: 1;
+  background-color: #FEF615;
+  background-color: rgba(254, 246, 21, var(--bg-opacity));
+  bottom:0.5rem;
+}
+
+.menu{
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 16rem;
+  left:-100%;
+  z-index: 1;
+  transition:0.7s ease-in-out;
+}
+
+.nav-responsive{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16rem;
+  transition:0.5s ease-in-out;
+  z-index: 1;
+}
+
+.cross-responsive{
+  position: absolute;
+  background:url(../img/cancel-yellow.svg) center;
+  background-size:contain;
+  right:1rem;
+  top:1rem;
+}
+
+.cross-responsive:hover{
+  transform:rotate(180deg);
+}
+
 label{
   font-family: 'Alata';
   font-size: 1.25rem;
@@ -838,11 +906,7 @@ label{
 }
 
 .header-pagination{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1rem;
-  z-index:10;
+  display: none;
 }
 
 .header-bullets{
@@ -866,8 +930,6 @@ label{
 
 #encard-header{
   background : linear-gradient(rgba(254,46,21,1), rgba(254,46,21,1));
-  border-bottom:solid black;
-  border-bottom-width:2rem;
 }
 
 #encard-header > h1{
@@ -22087,6 +22149,27 @@ footer a {
 }
 
 @media (min-width: 768px){
+  .menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 16rem;
+    left:-100%;
+    z-index: 1;
+    transition:0.7s ease-in-out;
+  }
+
+  .nav-responsive{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16rem;
+    transition:0.5s ease-in-out;
+    z-index: 11;
+  }
+
   #encard-header{
     background : linear-gradient(rgba(254,46,21,.8), rgba(254,46,21,.8));
     position: absolute;
@@ -22100,7 +22183,7 @@ footer a {
 
   .header-pagination{
     display: flex;
-    transform:translateX(10rem);
+    margin-left: 2rem;
     z-index:10;
   }
 
@@ -22118,9 +22201,12 @@ footer a {
     color:yellow;
   }
 
+  #actu > h2 {
+    box-shadow: none;
+  }
+
   .article{
-    margin-right: 2rem;
-    width: 33.333333%;
+    margin-bottom: 4rem;
     overflow:hidden;
     height:28rem;
   }
@@ -22153,13 +22239,17 @@ footer a {
     transition-timing-function: ease-out;
   }
 
-  #programmation > h2{
-    background:none;
-    box-shadow:none;
-  }
-
-  #actu > h2 {
-    box-shadow: none;
+  .edition > h3:before{
+    content:"";
+    width: 75%;
+    height: 0.25rem;
+    --bg-opacity: 1;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+    position: absolute;
+    top:50%;
+    left:2rem;
+    transform:translateY(-50%)
   }
 
   .reservation{
@@ -22188,11 +22278,54 @@ footer a {
     background:none;
   }
 
+  .menu{
+    display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+    left: auto;
+  }
+
   .swiper-header{
     width: 100%;
     height:40rem;
     overflow:hidden;
     border:none;
+  }
+
+  .header-pagination{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    z-index:10;
+  }
+
+  .header-bullets{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+    position: relative;
+  }
+
+  .header-bullets-active{
+    width: 0.5rem;
+    height: 0.5rem;
+    --text-opacity: 1;
+    color: #FEF615;
+    color: rgba(254, 246, 21, var(--text-opacity));
+  }
+
+  .article{
+    margin-right: 2rem;
+    width: 33.333333%;
+    margin-bottom: 0;
+    overflow:hidden;
+    height:28rem;
   }
 
   .programme{

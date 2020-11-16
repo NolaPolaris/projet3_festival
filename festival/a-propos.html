@@ -17,21 +17,31 @@
 </head>
 
 <body id="page">
-  <header class="bg-black pl-8 py-8 text-white text-lg font-bold">
-    <nav>
-      <ul class="flex justify-between items-center w-1/3 ">
-        <li><a href="#">
-            <h3>Actualités</h3>
-          </a></li>
-        <li><a href="#">
-            <h3>Programme 2020</h3>
-          </a></li>
-        <li><a href="#">
-            <h3>Réserver</h3>
-          </a></li>
-        <li><a href="#">
-            <h3>A propos</h3>
-          </a></li>
+  <header class="bg-black pl-8 py-8 text-white text-lg font-bold relative">
+    <div class="btn-nav lg:hidden">
+    </div>
+    
+    <nav class="menu">
+      <button id="cross" class="w-6 h-6 lg:hidden"></button>    
+      <ul class="px-8 pt-12 h-full lg:p-0 lg:flex lg:justify-between lg:items-center lg:w-1/3 bg-black">
+        <li class="my-2 lg:my-0">
+          <a href="#actu">Actualités</a>
+        </li>
+        <li class="my-2 lg:my-0">
+          <a href="programme.html" target="_blank">
+            Programme 2020
+          </a>
+        </li>
+        <li class="my-2 lg:my-0">
+          <a href="#reservation">
+            Réserver
+          </a>
+        </li>
+        <li class="my-2 lg:my-0">
+          <a href="a-propos.html">
+            A propos
+          </a>
+        </li>
       </ul>
     </nav>
   </header>

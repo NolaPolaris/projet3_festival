@@ -6,5 +6,11 @@
   },
   "scripts": {
     "build": "yarn tailwindcss build festival/static/css/main.css -o festival/static/css/festival.css"
-  }
+  },
+  "name": "projet3_festival",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/NolaPolaris/projet3_festival.git",
+  "author": "Julie <julie@atiweb.fr>",
+  "license": "MIT"
 }

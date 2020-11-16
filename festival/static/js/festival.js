@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
 });
 
 const swiper = new Swiper();
@@ -21,3 +20,13 @@ var mySwiper = new Swiper('.swiper-header', {
       },
 
   })
+
+$('.btn-nav').click(function() {
+  $('nav').addClass('nav-responsive');
+  $('#cross').addClass('cross-responsive')
+  $('#cross').click(function() {
+    $('nav').removeClass('nav-responsive');
+  }) 
+}) 
+
+

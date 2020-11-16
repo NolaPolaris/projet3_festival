@@ -18,27 +18,29 @@
 
 <body>
 
-  <header class="bg-black pl-8 py-8 text-white text-lg font-bold">
-    <nav>
-      <ul class="flex justify-between items-center w-1/3 ">
-        <li>
-          <a href="#actu">
-            <h3>Actualités</h3>
-          </a>
+  <header class="bg-black pl-8 py-8 text-white text-lg font-bold relative">
+    <div class="btn-nav lg:hidden">
+    </div>
+    
+    <nav class="menu">
+      <button id="cross" class="w-6 h-6 lg:hidden"></button>    
+      <ul class="px-8 pt-12 h-full lg:p-0 lg:flex lg:justify-between lg:items-center lg:w-1/3 bg-black">
+        <li class="my-2 lg:my-0">
+          <a href="#actu">Actualités</a>
         </li>
-        <li>
+        <li class="my-2 lg:my-0">
           <a href="programme.html" target="_blank">
-            <h3>Programme 2020</h3>
+            Programme 2020
           </a>
         </li>
-        <li>
+        <li class="my-2 lg:my-0">
           <a href="#reservation">
-            <h3>Réserver</h3>
+            Réserver
           </a>
         </li>
-        <li>
+        <li class="my-2 lg:my-0">
           <a href="a-propos.html">
-            <h3>A propos</h3>
+            A propos
           </a>
         </li>
       </ul>
@@ -91,7 +93,7 @@
     <section class="pt-6 lg:p-0 lg:mt-20 bg-yellow md:bg-white" id="actu">
       <h2 class="my-4 ml-3 mr-4 bg-white lg:mx-0 lg:my-12 text-center">Actualités</h2>
       
-      <div class="mt-10 md:mx-20 md:flex md:justify-between md:items-center">
+      <div class="mt-10 md:mx-20 lg:flex md:justify-between md:items-center">
 
         <div class="article">
           <h3>Ouverture du festival !</h3>
@@ -132,37 +134,37 @@
     </section>
     
 
-    <section id="programmation" class="relative pt-4 lg:pt-12 bg-yellow md:bg-transparent">
+    <section id="programmation" class="relative pt-4 lg:pt-12 bg-yellow lg:bg-transparent">
       <h2 class="my-4 ml-3 mr-4 bg-white lg:mx-0 lg:my-12 text-center">Programmation</h2>
       <div class="edition">
-        <h3 class="py-3 px-4 md:p-0 md:absolute">Edition 2020</h3>
+        <h3 class="py-3 px-4 lg:absolute">Edition 2020</h3>
       </div>
       
       <div class="programme lg:mx-20 relative ">    
-        <img src="static/img/film-6.jpg" class="hidden md:block md:w-full" alt="" />
-        <div class="md:absolute encart-prog">
+        <img src="static/img/film-6.jpg" class="hidden lg:block lg:w-full" alt="" />
+        <div class="lg:absolute encart-prog">
 
-          <h3 id="thursday" class="md:absolute">Jeudi 5 aout</h3>
+          <h3 id="thursday" class="lg:absolute">Jeudi 5 aout</h3>
 
-          <div class="md:absolute movie" id="movie-one"><a><i>Grave</i>, Julia Ducournau - 2017</a></div>
-          <div class="md:absolute movie" id="movie-two"><a><i>Un Ange</i>, Koen Mortier - 2018</a></div>
+          <div class="lg:absolute movie" id="movie-one"><a><i>Grave</i>, Julia Ducournau - 2017</a></div>
+          <div class="lg:absolute movie" id="movie-two"><a><i>Un Ange</i>, Koen Mortier - 2018</a></div>
 
-          <h3 id="friday" class="md:absolute">Vendredi 6 août</h3>
+          <h3 id="friday" class="lg:absolute">Vendredi 6 août</h3>
 
-          <div class="md:absolute movie" id="movie-three"><a><i>Adieu les cons</i>, Albert Dupontel - 2020</a></div>
-          <div class="md:absolute movie" id="movie-four"><a><i>The Whistler</i>, Corneliu Porumboiu  - 2018</a></div>
+          <div class="lg:absolute movie" id="movie-three"><a><i>Adieu les cons</i>, Albert Dupontel - 2020</a></div>
+          <div class="lg:absolute movie" id="movie-four"><a><i>The Whistler</i>, Corneliu Porumboiu  - 2018</a></div>
 
-          <h3 id="saturday" class="md:absolute">Samedi 7 août</h3>
+          <h3 id="saturday" class="lg:absolute">Samedi 7 août</h3>
 
-          <div class="md:absolute movie" id="movie-five"><a><i>Petit Pays</i>, Gaël Faye - 2019</a></div>
-          <div class="md:absolute movie" id="movie-six"><a><i>Black</i>, Adil El Arbi et Bilall Fallah - 2015</a></div>
+          <div class="lg:absolute movie" id="movie-five"><a><i>Petit Pays</i>, Gaël Faye - 2019</a></div>
+          <div class="lg:absolute movie" id="movie-six"><a><i>Black</i>, Adil El Arbi et Bilall Fallah - 2015</a></div>
 
-          <h3 id="sunday" class="md:absolute">Dimanche 8 août</h3>
+          <h3 id="sunday" class="lg:absolute">Dimanche 8 août</h3>
 
-          <div class="md:absolute movie" id="movie-seven"><a><i>Bullhead</i>, Michaël R. Roskam - 2011</a></div>
-          <div class="md:absolute movie" id="movie-eight"><a><i>Party Girl</i>, Marie Amachoukeli, Claire Burger, Samuel Theis - 2013</a></div>
+          <div class="lg:absolute movie" id="movie-seven"><a><i>Bullhead</i>, Michaël R. Roskam - 2011</a></div>
+          <div class="lg:absolute movie" id="movie-eight"><a><i>Party Girl</i>, Marie Amachoukeli, Claire Burger, Samuel Theis - 2013</a></div>
 
-          <div class="btn-info md:absolute"><a href="/programme.html"><button type="" id="btn-trans">En savoir plus</button></a></div>
+          <div class="btn-info lg:absolute"><a href="/programme.html"><button type="" id="btn-trans">En savoir plus</button></a></div>
         
 
           
@@ -172,7 +174,7 @@
       
 
     </section>
-    <section id="reservation" class="reservation pt-4 px-4 pb-16 md:p-0 lg:mt-24 lg:pt-20 lg:pb-64">
+    <section id="reservation" class="reservation pt-4 px-4 pb-16  lg:mt-24 lg:pt-20 lg:pb-64">
     <div class="ml-1 mr-3 lg:mx-96 bg-white formulaire">
       <h2 class="">Réservation</h2>
       
@@ -200,12 +202,14 @@
         <label>Choisissez votre film</label>
         <select name="movie" id="movie-select" required>
           <option value="">choix du film</option>
-          <option value="film1">Film1 - date</option>
-          <option value="film2">Film2 - date</option>
-          <option value="film3">Film3 - date</option>
-          <option value="film4">Film4 - date</option>
-          <option value="film5">Film5 - date</option>
-          <option value="film6">Film6 - date</option>
+          <option value="film1"><i>Grave</i>, Julia Ducournau - 2017</option>
+          <option value="film2"><i>Un Ange</i>, Koen Mortier - 2018</option>
+          <option value="film3"><i>Adieu les cons</i>, Albert Dupontel - 2020</option>
+          <option value="film4"><i>The Whistler</i>, Corneliu Porumboiu  - 2018</option>
+          <option value="film5"><i>Petit Pays</i>, Gaël Faye - 2019</option>
+          <option value="film6"><i>Black</i>, Adil El Arbi et Bilall Fallah - 2015</option>
+          <option value="film5"><i>Bullhead</i>, Michaël R. Roskam - 2011</option>
+          <option value="film6"><i>Party Girl</i>, Marie Amachoukeli, Claire Burger, Samuel Theis - 2013</a></option>
         </select>
        </div>
        <div class="flex justify-center items-center my-12 mb-8 lg:mt-32">
@@ -221,10 +225,10 @@
   </main>
   <footer class="pb-8 relative bg-black">
     <div class="line absolute w-full"></div>
-    <div class="flex items-center justify-center pt-12">
-      <a href="mentions-legales.html" target="_blank" class="ml-2">Mentions légales -</a>
-      <a href="politique-de-confidentialite.html" target="_blank" class="ml-2">Politique de confidentialité -</a>
-      <a href="index.html" target="_blank" class="ml-2">Festival du Film de Plein Air 2020 -</a>
+    <div class="flex flex-col lg:flex-row items-center justify-center pt-8 lg:pt-12">
+      <a href="mentions-legales.html" target="_blank" class="ml-2">Mentions légales </a>
+      <a href="politique-de-confidentialite.html" target="_blank" class="ml-2 mb-8 lg:mb-0">Politique de confidentialité </a>
+      <a href="index.html" target="_blank" class="ml-2">Festival du Film de Plein Air 2020 </a>
       <a href="https://www.linkedin.com/in/julietaubry" target="_blank" class="ml-2">Réalisation : Julie Aubry-Tirel</a>
     </div>
     
