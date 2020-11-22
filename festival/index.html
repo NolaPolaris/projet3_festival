@@ -26,10 +26,13 @@
       <button id="cross" class="w-6 h-6 lg:hidden"></button>    
       <ul class="px-8 pt-12 h-full lg:p-0 lg:flex lg:justify-between lg:items-center lg:w-1/3 bg-black">
         <li class="my-2 lg:my-0">
+          <a href="index.html">Accueil</a>
+        </li>
+        <li class="my-2 lg:my-0">
           <a href="#actu">Actualités</a>
         </li>
         <li class="my-2 lg:my-0">
-          <a href="programme.html" target="_blank">
+          <a href="programme.html">
             Programme 2020
           </a>
         </li>
@@ -90,42 +93,46 @@
     </section>
 
 
-    <section class="pt-6 lg:p-0 lg:mt-20 bg-yellow md:bg-white" id="actu">
+    <section class="py-6 lg:p-0 lg:mt-20 bg-yellow md:bg-white" id="actu">
       <h2 class="my-4 ml-3 mr-4 bg-white lg:mx-0 lg:my-12 text-center">Actualités</h2>
       
       <div class="mt-10 md:mx-20 lg:flex md:justify-between md:items-center">
 
-        <div class="article">
+        <div class="article mb-8 lg:mb-0">
           <h3>Ouverture du festival !</h3>
-          <img src="static/img/film-1.png" class="w-full h-full object-cover">
-          <p class="absolute w-full h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis est sit amet purus feugiat blandit.
-              Donec fringilla nibh dui. In ligula nisi, consequat ac faucibus non, rhoncus non nunc. Suspendisse rutrum
-              elit pulvinar est dictum aliquet. Donec nec dignissim eros. Fusce accumsan tincidunt mattis. Etiam dapibus
-              nec leo at bibendum.
+          <img src="static/img/film-1.png" class="hidden lg:block w-full h-full object-cover">
+          <p class="text-base pt-16 md:pt-32 pb-8 md:text-lg lg:absolute w-full h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis est sit amet purus feugiat blandit.
+            Donec fringilla nibh dui. In ligula nisi, consequat ac faucibus non, rhoncus non nunc. Suspendisse rutrum
+            elit pulvinar est dictum aliquet. Donec nec dignissim eros. Fusce accumsan tincidunt mattis. Etiam dapibus
+            nec leo at bibendum (...)
+            <a href="article.html" class="font-bold">Lire la suite</a>
           </p>
+          
           
         </div>
 
 
-        <div class="article ">
+        <div class="article mb-8 lg:mb-0">
           <h3><i>Black</i>, film coup de poing</h3>
-          <img src="static/img/film-4.jpg" class="w-full h-full object-cover">
-          <p class="absolute w-full h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis est sit amet purus feugiat blandit.
+          <img src="static/img/film-4.jpg" class="hidden lg:block w-full h-full object-cover">
+          <p class="text-base pt-16 md:pt-32 pb-8 md:text-lg lg:absolute w-full h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis est sit amet purus feugiat blandit.
               Donec fringilla nibh dui. In ligula nisi, consequat ac faucibus non, rhoncus non nunc. Suspendisse rutrum
               elit pulvinar est dictum aliquet. Donec nec dignissim eros. Fusce accumsan tincidunt mattis. Etiam dapibus
-              nec leo at bibendum.
+              nec leo at bibendum.(...)
+              <a href="article.html" class="font-bold">Lire la suite</a>
           </p>
           
         </div>
 
 
-        <div class="article ">
+        <div class="article mb-8 lg:mb-0">
           <h3><i>Adieu les cons</i>: enragé et engagé</h3>
-          <img src="static/img/film-2.png" class="w-full h-full object-cover">
-          <p class="absolute w-full h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis est sit amet purus feugiat blandit.
+          <img src="static/img/film-2.png" class="hidden lg:block w-full h-full object-cover">
+          <p class="lg:absolute pt-24 md:pt-32 pb-8 w-full h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis est sit amet purus feugiat blandit.
               Donec fringilla nibh dui. In ligula nisi, consequat ac faucibus non, rhoncus non nunc. Suspendisse rutrum
               elit pulvinar est dictum aliquet. Donec nec dignissim eros. Fusce accumsan tincidunt mattis. Etiam dapibus
-              nec leo at bibendum.
+              nec leo at bibendum.(...)
+              <a href="article.html" class="font-bold">Lire la suite</a>
           </p>
           
         </div>
@@ -200,7 +207,7 @@
 
        <div class="mb-8">
         <label>Choisissez votre film</label>
-        <select name="movie" id="movie-select" required>
+        <select name="movie" id="movie-select" class="w-full" required>
           <option value="">choix du film</option>
           <option value="film1"><i>Grave</i>, Julia Ducournau - 2017</option>
           <option value="film2"><i>Un Ange</i>, Koen Mortier - 2018</option>
@@ -226,10 +233,10 @@
   <footer class="pb-8 relative bg-black">
     <div class="line absolute w-full"></div>
     <div class="flex flex-col lg:flex-row items-center justify-center pt-8 lg:pt-12">
-      <a href="mentions-legales.html" target="_blank" class="ml-2">Mentions légales </a>
-      <a href="politique-de-confidentialite.html" target="_blank" class="ml-2 mb-8 lg:mb-0">Politique de confidentialité </a>
-      <a href="index.html" target="_blank" class="ml-2">Festival du Film de Plein Air 2020 </a>
-      <a href="https://www.linkedin.com/in/julietaubry" target="_blank" class="ml-2">Réalisation : Julie Aubry-Tirel</a>
+      <a href="mentions-legales.html" class="ml-2">Mentions légales </a>
+      <a href="politique-de-confidentialite.html" class="ml-2 mb-8 lg:mb-0">Politique de confidentialité </a>
+      <a href="index.html" class="ml-2">Festival du Film de Plein Air 2020 </a>
+      <a href="https://www.linkedin.com/in/julietaubry" class="ml-2">Réalisation : Julie Aubry-Tirel</a>
     </div>
     
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
